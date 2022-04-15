@@ -2,6 +2,7 @@
     <string name="app_name">앵ㅘㄴ동물 사진보기</string>
     <string name="text_start">선택을 시작?</string>
     <string name="text_quest">좋아하는 동물?</string>
+    <string name="cheak_start">시작함</string>
     <string name="radio_dog">강아지</string>
     <string name="radio_rabbit">토끼</string>
     <string name="radio_cat">고양이</string>
