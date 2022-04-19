@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:padding="20dp"
     tools:context=".MainActivity">
 
     <TextView
@@ -12,45 +13,65 @@
         android:layout_height="wrap_content"
         android:textSize="20sp"
         android:text="@string/text_start"/>
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
 
-<!--    <ImageView
-        android:layout_width="100dp"
-        android:layout_height="150dp"
-        android:background="@color/black"
-        android:src="@drawable/snas"/>
-    <ImageButton
-        android:layout_width="100dp"
+    <CheckBox
+        android:id="@+id/cheak_star"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/snas"/>--> <!--컨트롤쉬프트슬레시
-    <ImageView
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:scaleType="fitXY"
-        android:src="@drawable/snas"
-        android:background="@color/black"/>
-    <ImageView
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:scaleType="fitCenter"
-        android:src="@drawable/snas"
-        android:background="@color/black"/>
-    <ImageView
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:scaleType="fitCenter"
-        android:src="@drawable/snas"
-        android:background="@color/black"/>-->
-<!--    <ImageView
+        android:textSize="20sp"
+        android:text="@string/cheak_start"/>
+
+    <LinearLayout
+        android:id="@+id/linear_sub"
+        android:visibility="invisible"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:adjustViewBounds="true"
-        android:scaleType="fitCenter"
-        android:src="@drawable/snas"
-        android:background="@color/black"/>-->
+        android:layout_margintom="20dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="@string/text_quest"/>
 
+        <RadioGroup
+            android:id="@+id/rg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/rb_dog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:checked="true"
+                android:text="@string/radio_dog"/>
+            <RadioButton
+                android:id="@+id/rb_cat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:text="@string/radio_cat"/>
+            <RadioButton
+                android:id="@+id/rb_rabbit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:text="@string/radio_rabbit"/>
+        </RadioGroup>
+        <Button
+            android:id="@+id/btn_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="@string/radio_done"/>
+        <ImageView
+            android:id="@+id/imgv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/dog" />
 
-
+    </LinearLayout>
 </LinearLayout>
